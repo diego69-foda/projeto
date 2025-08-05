@@ -1,4 +1,48 @@
-package utils;
+ /*
+ Exemplo01: Programa simples para entender sintaxe e fluxo em Java.
+ 
+ Conceitos abordados:
+ - Organização de pacotes (`package`)
+ - Importação de classes (`import`)
+ - Método `main` como ponto de entrada
+ - Declaração de variáveis primitivas
+ - Entrada de dados customizada via classe `Teclado`
+ - Saída de dados com `System.out.println` e `System.out.printf`
+ 
+ Autoria: Professor Lorenzon, revisão 2025-2.
+*/
+   public class Exemoplo01 { //inicio da classe
+
+    // Método principal: onde a execução começa
+    public static void main (String args[])  {   
+                                          
+              //Tipos primitivos de dados com camelCase
+              int      valorInteiro        = 0;      //padrão de inicialização é 0
+              boolean  logicoVerdadeiro    = true;   //padrão de inicialização é false
+              // OBS: Evitar o uso de float, prefira double para maior precisão.
+              float    valorFlutuante      = 3.14f;  //ou double sem f 
+              // ERRO COMUM: tentar usar vírgula como separador decimal sem tratamento. 
+              double   valorDecimal        = 1.0;    //prefira double e use . para casa demimal 
+              //char também é um tipo primitivo em C, mas String não é.
+              char     umaLetra            = 'A'; 
+
+              umaLetra = 'B';          
+              
+              // float é menos preciso que double. Ao converter de double para float, é necessário "casting":
+              // valorFlutuante = (float) Teclado.readDouble();
+
+              // %d = inteiro, %.2f = float com 2 casas, %b = booleano
+              //System.out.println: saída simples
+              //System.out.printf: saída formatada
+
+              System.out.printf ( "Valores inicializados:\n\nInteiro: %d\nDecimal: %.2f\nBooleano: %b", //uso de formatadores
+                                   valorInteiro,
+                                   valorFlutuante,                                   
+                                   logicoVerdadeiro);
+
+              //leitura dos valores e escrita dos mesmos via usuário
+              
+              System.out
 
 import java.util.Scanner;
 import java.util.InputMismatchException;

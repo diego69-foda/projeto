@@ -15,9 +15,7 @@
  - Saída de dados com `System.out.println` e `System.out.printf`
  
  Autoria: Professor Lorenzon, revisão 2025-2.
-*/
-   import utils.Teclado;
-
+*/ 
    public class Exemoplo01 { //inicio da classe
 
     // Método principal: onde a execução começa
