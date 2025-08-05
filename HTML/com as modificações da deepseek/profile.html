@@ -1,0 +1,48 @@
+<!-- Modal para Edição de Perfil -->
+<div class="modal fade" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="profileModalLabel">Meu Perfil</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <form id="profile-form">
+          <input type="hidden" id="profile-id">
+          
+          <div class="mb-3">
+            <label for="profile-username" class="form-label">Nome de Usuário</label>
+            <input type="text" class="form-control" id="profile-username" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="profile-email" class="form-label">Email</label>
+            <input type="email" class="form-control" id="profile-email" required>
+          </div>
+          
+          <div class="mb-3">
+            <label for="profile-company" class="form-label">Empresa</label>
+            <input type="text" class="form-control" id="profile-company" disabled>
+          </div>
+          
+          <div class="mb-3">
+            <label for="profile-password" class="form-label">Nova Senha (deixe em branco para manter a atual)</label>
+            <input type="password" class="form-control" id="profile-password">
+          </div>
+          
+          <div class="mb-3">
+            <label for="profile-confirm-password" class="form-label">Confirmar Nova Senha</label>
+            <input type="password" class="form-control" id="profile-confirm-password">
+            <div class="invalid-feedback" id="password-match-feedback">
+              As senhas não coincidem.
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary" id="save-profile-btn">Salvar Alterações</button>
+      </div>
+    </div>
+  </div>
+</div>

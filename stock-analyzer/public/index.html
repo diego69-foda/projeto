@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Analyzer Pro</title>
+    <link rel="icon" href="/favicon.ico" type="image/x-icon"> <!-- Adicione um favicon.ico na pasta public -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Chart.js carregado com defer para não bloquear o parsing do HTML -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns@3.0.0/dist/chartjs-adapter-date-fns.bundle.min.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Stock Analyzer Pro</h1>
+            <!-- Formulário para melhor semântica e usabilidade (Enter para buscar) -->
+            <form class="search-box">
+                <div class="input-group">
+                    <label for="tickerInput" class="sr-only">Digite o ticker (ex: PETR4, BTC, AAPL)</label>
+                    <input type="text" id="tickerInput" placeholder="Digite o ticker (ex: PETR4, BTC, AAPL)">
+                </div>
+                <div class="input-group">
+                    <label for="periodSelect" class="sr-only">Selecione o período</label>
+                    <select id="periodSelect">
+                        <option value="1mo">1 Mês</option>
+                        <option value="3mo">3 Meses</option>
+                        <option value="6mo">6 Meses</option>
+                        <option value="1y" selected>1 Ano</option>
+                        <option value="2y">2 Anos</option>
+                        <option value="5y">5 Anos</option>
+                    </select>
+                </div>
+                <button type="submit" id="searchButton">Buscar</button>
+            </form>
+        </header>
+
+        <main>
+            <!-- Indicadores de estado -->
+            <div id="loadingIndicator" class="loading-spinner" role="status" aria-label="Carregando dados da ação"></div>
+            <div id="errorContainer" class="error-container" aria-live="polite"></div>
+
+            <div class="stock-info">
+                <h2 id="stockTitle"></h2>
+                <!-- Usando <dl> para metadados -->
+                <dl id="stockMeta"></dl>
+            </div>
+
+            <div class="chart-container">
+                <canvas id="stockChart"></canvas>
+            </div>
+
+            <div class="signals-section">
+                <h3>Sinais de Compra/Venda</h3>
+                <!-- Container para a tabela de sinais, será preenchido via JS -->
+                <div id="signalsTable"></div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Seu script.js carregado com defer para não bloquear o parsing do HTML -->
+    <script src="script.js" defer></script>
+</body>
+</html>

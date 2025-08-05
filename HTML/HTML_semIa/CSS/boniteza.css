@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 90%; /* Ocupa 90% da largura da tela */
+    max-width: 1200px; /* Limita a largura máxima */
+    margin: 0 auto; /* Centraliza horizontalmente */
+    padding: 2rem; /* Espaçamento interno responsivo */
+    box-sizing: border-box; /* Inclui padding no cálculo da largura */
+    color: white;
+    font-family: 'IBM Plex Sans Thai', sans-serif; /* Corrigido nome da fonte */
+
+    background: linear-gradient(-45deg, #5528c7, #035da8, #3c29cd, #8824e6);
+    background-size: 400% 400%;
+    animation: degradeAnimado 10s ease infinite;
+}
+
+@keyframes degradeAnimado {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+p {
+    font-size: 1.2rem; /* Tamanho de fonte responsivo usando rem */
+    margin: 1rem 0; /* Margem vertical responsiva */
+    text-align: center; /* Centraliza o texto */
+    max-width: 100%; /* Garante que o texto não ultrapasse o contêiner */
+    line-height: 1.5; /* Melhora a legibilidade */
+}
+
+img {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém proporção da imagem */
+    margin-bottom: 1.5rem; /* Espaço abaixo da imagem */
+}
+
+button {
+    padding: 0.8rem 1.5rem; /* Padding responsivo */
+    background-color: #bcea59;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 2rem; /* Corrigido de vx para rem */
+    cursor: pointer;
+    font-size: 1rem; /* Tamanho de fonte responsivo */
+    margin-top: 1rem; /* Espaço acima do botão */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Media queries para diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    body {
+        width: 95%; /* Ocupa mais espaço em telas menores */
+        padding: 1.5rem;
+    }
+    
+    p {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    p {
+        font-size: 1rem;
+    }
+    
+    button {
+        padding: 0.7rem 1.2rem;
+    }
+}
