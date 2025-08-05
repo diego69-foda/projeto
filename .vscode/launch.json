@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Exemoplo01",
+      "request": "launch",
+      "mainClass": "Exemoplo01",
+      "projectName": "projeto_1cc041bd"
+    },
+    {
+      "type": "java",
       "name": "HelloWorld",
       "request": "launch",
       "mainClass": "codigo_java.HelloWorld",
