@@ -3,6 +3,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "App",
+      "projectName": "projeto_1cc041bd"
+    },
+    {
+      "type": "java",
+      "name": "Exemplo08",
+      "request": "launch",
+      "mainClass": "codigo_java.Programas_para_entender_sintaxe_e_fluxo_Java.Exemplo08.src.Exemplo08",
+      "projectName": "projeto_1cc041bd"
+    },
+    {
+      "type": "java",
       "name": "Exemoplo01",
       "request": "launch",
       "mainClass": "Exemoplo01",
