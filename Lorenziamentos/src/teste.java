@@ -1,0 +1,7 @@
+import utilitarios.Teclado;
+
+public class teste {
+    public static void main(String[] args) throws Exception {
+         
+    }
+}

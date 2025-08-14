@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "testarSePassou",
+      "request": "launch",
+      "mainClass": "testarSePassou",
+      "projectName": "projeto_1cc041bd"
+    },
+    {
+      "type": "java",
       "name": "App",
       "request": "launch",
       "mainClass": "App",
