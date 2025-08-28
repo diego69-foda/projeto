@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "App",
+      "request": "launch",
+      "mainClass": "TPE1.App",
+      "projectName": "projeto_1cc041bd"
+    },
+    {
+      "type": "java",
       "name": "jogo",
       "request": "launch",
       "mainClass": "jogo",
