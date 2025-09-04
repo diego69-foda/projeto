@@ -10,7 +10,6 @@ public class JogoDados {
         dado = new Dado(min, max);
     }
 
-
     public void jogar() {
         while (true) {
         int resultado1 = dado.rolar();
