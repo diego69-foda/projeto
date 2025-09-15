@@ -8,6 +8,7 @@ public class ContaBancaria {
         setNumeroConta(numeroConta);
         depositar(saldoConta);
     }
+
     public int getNumeroConta() {
         return numeroConta;
     }
@@ -19,7 +20,7 @@ public class ContaBancaria {
         this.numeroConta = numeroConta;
         }
     }
-    
+
     public double getSaldoConta() {
         return saldoConta;
     }
@@ -27,5 +28,5 @@ public class ContaBancaria {
     public void depositar(double saldoConta) {
         saldoConta += saldoConta;
     }
-    
+
 }
